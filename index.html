@@ -16,14 +16,13 @@
                 <div class="contact-name">{{ person.name }}</div>
             </div>
             <div class="contact-right">
-                <div clas="contact-info">
-                    <p v-show=" contactTypeSelected == 'email'">{{ person.email }}</p>
-                    <p v-show=" contactTypeSelected == 'phone'">{{ person.phone }}</p>
+                <div class="contact-info">
+                    <p> <span v-if=" contactTypeSelected == 'phone'">{{ person.phoneNumber }}</span></p>
+                    <p> <span v-if=" contactTypeSelected == 'email'">{{ person.emailAddress }}</span></p>
                 </div>
-                <div></div>
             </div>
         </div>
-        
+
         <div class="footer">
             <select class="contact-mode" v-model="contactTypeSelected">
                 <option :value="mode.modeKey" v-for="mode in contactMode"> {{ mode.text }}</option>

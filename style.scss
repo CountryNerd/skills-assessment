@@ -26,13 +26,13 @@
     }
   }
   .contact {
-    background-color: rgb(33, 33, 33);
 
     .contact-left {
-        border: #000 2px solid;
+        border: #000 1px solid;
         width: 40%;
         padding: 1em;
-    
+        float: left;
+        background-color: rgb(33, 33, 33);
     }
     
     .status-circle {
@@ -64,6 +64,15 @@
       border-right-color: rgba(19, 19, 19, 0.6);
       border-right-width: 2px;
 
+    }
+    .contact-right{
+        float: left;
+    }
+    .contact-info{
+        p {
+            color: #fff;
+            display: block;
+        }
     }
       
   }

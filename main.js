@@ -4,32 +4,33 @@ var app = new Vue ({
         title: "Contacts",
         contactMode: [
             {
+                modeKey: "phone",
+                text: "Phone number"
+            }, 
+            {
                 modeKey: "email",
                 text: "Email address"
             }, 
-            {
-                modeKey: "phone",
-                text: "Phone number"
-            }],
+        ],
         contactTypeSelected: "email",
         people: [
             { 
             status: "available", 
             name: "Christian",
-            email: "Christian@edu",
-            phone: "509"
+            emailAddress: "Christian@edu",
+            phoneNumber: "509..."
             },
             { 
             status: "away", 
             name: "Joe",
-            email: "Christian@edu",
-            phone: "509"
+            emailAddress: "Joe@edu",
+            phoneNumber: "509"
           },
           { 
             status: "standby", 
             name: "Lesli",
-            email: "Christian@edu",
-            phone: "509"
+            emailAddress: "lesli@edu",
+            phoneNumber: "509"
           },
         ]
     }
