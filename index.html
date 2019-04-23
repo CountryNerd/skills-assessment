@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact List</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="app" class="contact-widget">
+        <div class="header"><h1 class="title">{{ title }}</h1></div>
+        <div class="contact" v-for="person in people">
+            <div class="contact-left">
+                <div class="status-circle" :class="person.status" ></div>
+                <div class="contact-name">{{ person.name }}</div>
+            </div>
+            <div class="contact-right">
+                <div clas="contact-info">
+                    <p v-show=" contactTypeSelected == 'email'">{{ person.email }}</p>
+                    <p v-show=" contactTypeSelected == 'phone'">{{ person.phone }}</p>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <div class="footer">
+            <select class="contact-mode" v-model="contactTypeSelected">
+                <option :value="mode.modeKey" v-for="mode in contactMode"> {{ mode.text }}</option>
+            </select>
+        </div>
+
+    </div>
+        <script src="main.js"></script>
+</body>
+
+</html>
