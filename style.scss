@@ -1,5 +1,6 @@
 .contact-widget {
   width: 290px;
+  height: 420px;
   background: #000;
   border-radius: 0.5em;
   .header {
@@ -11,7 +12,6 @@
     opacity: 0.502;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     padding: 0.75em;
-
     border-bottom: 2px #000;
 
     .title {
@@ -25,55 +25,70 @@
       margin: 0.5em;
     }
   }
-  .contact {
-
-    .contact-left {
-        border: #000 1px solid;
-        width: 40%;
-        padding: 1em;
-        float: left;
-        background-color: rgb(33, 33, 33);
-    }
-    
-    .status-circle {
-      border-radius: 50%;
-      width: 8px;
-      height: 8px;
-      float: left;
-      margin-left: .5em; 
-      margin-right: .5em; 
-    }
-    .available{
-        background-color: rgb(0, 255, 30);
-    }
-    .away{
-        background-color: red;
-
-    }
-    .standby{
-        background-color: rgb(195, 193, 24);  
-    }
-    .contact-name {
-      font-size: 12px;
-      font-family: "Helvetica";
-      color: rgb(255, 255, 255);
-      line-height: 1.2;
-      text-align: left;
-      float: left;
-      margin-top: -0.25em;
-      border-right-color: rgba(19, 19, 19, 0.6);
-      border-right-width: 2px;
-
-    }
-    .contact-right{
-        float: left;
-    }
-    .contact-info{
-        p {
-            color: #fff;
-            display: block;
+  .widgetBody{
+      height: 310px;
+    .contact {
+        .contact-left {
+            border: #000 1px solid;
+            padding: .8em;
+            width: 30%;
+            float: left;
+            background-color: rgb(33, 33, 33);
         }
-    }
-      
+        
+        .status-circle {
+          border-radius: 50%;
+          width: 8px;
+          height: 8px;
+          float: left;
+          margin-left: .5em; 
+          margin-right: .5em; 
+        }
+        .available{
+            background-color: rgb(0, 255, 30);
+        }
+        .away{
+            background-color: red;
+    
+        }
+        .standby{
+            background-color: rgb(195, 193, 24);  
+        }
+        .contact-name {
+          font-size: 12px;
+          font-family: "Helvetica";
+          color: rgb(255, 255, 255);
+          line-height: 1.2;
+          text-align: left;
+          float: left;
+          margin-top: -0.25em;
+          border-right-color: rgba(19, 19, 19, 0.6);
+          border-right-width: 2px;
+    
+        }
+        .contact-right{
+            float: left;
+            background-color:rgb(33, 33, 33);
+            width: 58%;
+            border: #000 1px solid;
+            padding-top: .72em;
+            padding-bottom: .72em;
+        }
+        .contact-info{
+            padding-left: 8px;
+            p {
+                font-family: "Helvetica";
+                color: rgb(86, 86, 86);
+                line-height: 1.2;
+                font-size: 12px;
+                margin: 0;
+                display: block;
+            }
+        }
+          
+      }
+  }
+  .footer{
+      padding: 1em;
   }
 }

@@ -9,25 +9,26 @@
 
 <body>
     <div id="app" class="contact-widget">
-        <div class="header"><h1 class="title">{{ title }}</h1></div>
-        <div class="contact" v-for="person in people">
-            <div class="contact-left">
-                <div class="status-circle" :class="person.status" ></div>
-                <div class="contact-name">{{ person.name }}</div>
-            </div>
-            <div class="contact-right">
-                <div class="contact-info">
-                    <p> <span v-if=" contactTypeSelected == 'phone'">{{ person.phoneNumber }}</span></p>
-                    <p> <span v-if=" contactTypeSelected == 'email'">{{ person.emailAddress }}</span></p>
+        <div class="header"><h1 class="title">{{ title }}</h1>
+    </div>
+    <div class="widgetBody">
+            <div class="contact" v-for="person in people">
+                    <div class="contact-left">
+                        <div class="status-circle" :class="person.status" ></div>
+                        <div class="contact-name">{{ person.name }}</div>
+                    </div>
+                    <div class="contact-right">
+                        <div class="contact-info">
+                            <p>{{ person.selectedInfo }}</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <select class="contact-mode" v-model="contactTypeSelected">
-                <option :value="mode.modeKey" v-for="mode in contactMode"> {{ mode.text }}</option>
-            </select>
-        </div>
+    </div>
+    <div class="footer">
+        <select class="contact-mode" v-model="contactTypeSelected">
+            <option :value="mode.modeKey" v-for="mode in contactMode"> {{ mode.text }}</option>
+        </select>
+    </div>
 
     </div>
         <script src="main.js"></script>

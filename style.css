@@ -1,5 +1,6 @@
 .contact-widget {
   width: 290px;
+  height: 420px;
   background: #000;
   border-radius: 0.5em;
 }
@@ -24,14 +25,17 @@
   opacity: 1;
   margin: 0.5em;
 }
-.contact-widget .contact .contact-left {
+.contact-widget .widgetBody {
+  height: 310px;
+}
+.contact-widget .widgetBody .contact .contact-left {
   border: #000 1px solid;
-  width: 40%;
-  padding: 1em;
+  padding: 0.8em;
+  width: 30%;
   float: left;
   background-color: #212121;
 }
-.contact-widget .contact .status-circle {
+.contact-widget .widgetBody .contact .status-circle {
   border-radius: 50%;
   width: 8px;
   height: 8px;
@@ -39,16 +43,16 @@
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
-.contact-widget .contact .available {
+.contact-widget .widgetBody .contact .available {
   background-color: #00ff1e;
 }
-.contact-widget .contact .away {
+.contact-widget .widgetBody .contact .away {
   background-color: red;
 }
-.contact-widget .contact .standby {
+.contact-widget .widgetBody .contact .standby {
   background-color: #c3c118;
 }
-.contact-widget .contact .contact-name {
+.contact-widget .widgetBody .contact .contact-name {
   font-size: 12px;
   font-family: "Helvetica";
   color: white;
@@ -59,11 +63,27 @@
   border-right-color: rgba(19, 19, 19, 0.6);
   border-right-width: 2px;
 }
-.contact-widget .contact .contact-right {
+.contact-widget .widgetBody .contact .contact-right {
   float: left;
+  background-color: #212121;
+  width: 58%;
+  border: #000 1px solid;
+  padding-top: 0.72em;
+  padding-bottom: 0.72em;
 }
-.contact-widget .contact .contact-info p {
-  color: #fff;
+.contact-widget .widgetBody .contact .contact-info {
+  padding-left: 8px;
+}
+.contact-widget .widgetBody .contact .contact-info p {
+  font-family: "Helvetica";
+  color: #565656;
+  line-height: 1.2;
+  font-size: 12px;
+  margin: 0;
+  display: block;
+}
+.contact-widget .footer {
+  padding: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
